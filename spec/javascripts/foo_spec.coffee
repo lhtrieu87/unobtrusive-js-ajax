@@ -1,3 +1,6 @@
-describe 'foo', ->
-    it 'does something', ->
-        expect(1 + 1).toBe 2
+describe "Foo", ->
+    describe "with HTML fixture", ->
+        beforeEach ->
+            loadFixtures "fixture.html"
+        it "the text should be added", ->
+            expect($('#0')).toHaveText "foo"

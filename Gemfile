@@ -3,8 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+gem 'haml'
 group :development, :test do
-    gem 'jasmine-rails'
+    gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
 end
 
 # Use sqlite3 as the database for Active Record
